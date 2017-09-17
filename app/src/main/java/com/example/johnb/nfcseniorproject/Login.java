@@ -45,8 +45,8 @@ public class Login extends AppCompatActivity {
         TextView newUserButton = (TextView) findViewById(R.id.newUserButton);
         newUserButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent loginIntent = new Intent(getApplicationContext(),RegisterUser.class);
-                startActivity(loginIntent);
+                Intent registerIntent = new Intent(getApplicationContext(),RegisterUser.class);
+                startActivity(registerIntent);
             }
         });
 
@@ -55,7 +55,6 @@ public class Login extends AppCompatActivity {
     }
 
     public void OnLogin(View view) throws InterruptedException, ExecutionException, TimeoutException {
-        AlertDialog alertDialog;
         String userName = loginUserName.getText().toString();
         String password = loginPassword.getText().toString();
         String type = "login";
@@ -65,7 +64,8 @@ public class Login extends AppCompatActivity {
         backroundWorker.get(1000, TimeUnit.MILLISECONDS);
         String result = GlobalInformation.getInstance().queryResult;
 
-        alertDialog = new AlertDialog.Builder(getApplicationContext()).create();
+        AlertDialog alertDialog;
+        alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle("Login Status");
 
         if(result.equals("ConnectionError")){
