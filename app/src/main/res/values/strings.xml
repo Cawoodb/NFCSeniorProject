@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NFCSeniorProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home1">Home1</string>
+</resources>

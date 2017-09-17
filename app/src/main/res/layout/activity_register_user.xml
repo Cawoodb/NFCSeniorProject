@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.johnb.nfcseniorproject.RegisterUser">
+
+    <EditText
+        android:id="@+id/registerUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/registerFirstName"
+        android:layout_alignRight="@+id/registerFirstName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/registerUserName"
+        android:layout_alignLeft="@+id/registerFirstName"
+        android:layout_alignStart="@+id/registerFirstName" />
+
+    <EditText
+        android:id="@+id/registerPasswordConfirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/registerPassword"
+        android:layout_alignLeft="@+id/registerUserName"
+        android:layout_alignStart="@+id/registerUserName" />
+
+    <EditText
+        android:id="@+id/registerFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/registerPasswordConfirmation"
+        android:layout_alignLeft="@+id/registerLastName"
+        android:layout_alignStart="@+id/registerLastName" />
+
+
+    <EditText
+        android:id="@+id/registerLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/registerFirstName"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/companyRegistrationNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Company Number"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/registerLastName"
+        android:layout_alignLeft="@+id/registerLastName"
+        android:layout_alignStart="@+id/registerLastName" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Create Account"
+        android:layout_below="@+id/companyRegistrationNumber"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
