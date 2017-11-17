@@ -10,6 +10,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 "
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
     <meta-data
         android:name="android.support.VERSION"
         android:value="25.3.1" />
@@ -34,8 +41,43 @@
         <activity
             android:name="com.example.johnb.nfcseniorproject.Home"
             android:label="@string/title_activity_home1"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
         <activity android:name="com.example.johnb.nfcseniorproject.RegisterUser" />
+        <activity android:name="com.example.johnb.nfcseniorproject.AreaCheck" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+        <activity android:name="com.example.johnb.nfcseniorproject.AdminPage" >
+        </activity>
+        <activity android:name="com.example.johnb.nfcseniorproject.WriteTag" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
     </application>
 
 </manifest>

@@ -52,6 +52,9 @@ public class Login extends AppCompatActivity {
 
         loginUserName = (EditText)findViewById(R.id.loginUserName);
         loginPassword = (EditText)findViewById(R.id.loginPassword);
+        loginPassword.setText("admin");
+        loginUserName.setText("admin");
+
     }
 
     public void OnLogin(View view) throws InterruptedException, ExecutionException, TimeoutException {
@@ -61,7 +64,7 @@ public class Login extends AppCompatActivity {
         BackroundWorker backroundWorker = new BackroundWorker(this);
 
         backroundWorker.execute(type, userName, password);
-        backroundWorker.get(1000, TimeUnit.MILLISECONDS);
+        backroundWorker.get(5000, TimeUnit.MILLISECONDS);
         String result = GlobalInformation.getInstance().queryResult;
 
         AlertDialog alertDialog;

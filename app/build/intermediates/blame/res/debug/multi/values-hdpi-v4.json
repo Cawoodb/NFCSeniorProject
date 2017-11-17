@@ -7,9 +7,47 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 6,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "C:\\Users\\Johnb\\.android\\build-cache\\1c3df82d41403227e387a2d0f2f6fe7c015cdb4b\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 57,
+                        "endOffset": 108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "C:\\Users\\Johnb\\.android\\build-cache\\1c3df82d41403227e387a2d0f2f6fe7c015cdb4b\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 113,
+                        "endColumn": 55,
+                        "endOffset": 164
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endLine": 8,
                     "endColumn": 13,
-                    "endOffset": 327
+                    "endOffset": 441
                 },
                 "from": {
                     "file": "C:\\Users\\Johnb\\.android\\build-cache\\cb92ba07c7c5bcdd9acf5b72ca11130f331b7f26\\output\\res\\values-hdpi-v4\\values-hdpi-v4.xml",

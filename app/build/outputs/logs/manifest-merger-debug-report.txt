@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:2:1-69:12
 	package
 		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:3:5-49
 		INJECTED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml
@@ -17,65 +17,16 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:4:5-83
 	android:name
 		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:4:22-64
-application
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:6:5-28:19
-MERGED from [com.android.support:design:25.3.1] C:\Users\Johnb\.android\build-cache\d1db577a2e40ce3cd62de21fe10b0d58535e02ba\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\Johnb\.android\build-cache\a5e3c5cfddb4bde7a8a88116f6dabd4b7bf5e3f8\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Johnb\.android\build-cache\a5072e121e29e8b18cb4d306f5ad155eaccedcc8\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Johnb\.android\build-cache\cb92ba07c7c5bcdd9acf5b72ca11130f331b7f26\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Johnb\.android\build-cache\7e2f835e40564e87f7e0209ee04141d3305081af\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Johnb\.android\build-cache\f0cfe7d54c34bb0e52e4140f979f7db851fdf727\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Johnb\.android\build-cache\b1fd2f1798199bb1066f0eb63a48a0b20a9168e2\output\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Johnb\.android\build-cache\8a3758158a4f83e5aadb9a8ca772d54e4181dd49\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Johnb\.android\build-cache\df858ddcde1bf991bf34ea7604c5754ffec618fe\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Johnb\.android\build-cache\8cd14325f6ce4959f3f8c5f63d4b7571c722a91d\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Johnb\.android\build-cache\0b48a7ab6de7a579851a2b18ff8ad0c6b93f874a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Johnb\.android\build-cache\1c88562258243f796faa402f032141247a8ebb4f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Johnb\.android\build-cache\5322326502b530e40f7d7613af95007143cffb68\output\AndroidManifest.xml:29:5-20
-	android:label
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:9:9-41
-	android:supportsRtl
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:11:9-35
-	android:roundIcon
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:10:9-54
-	android:allowBackup
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:7:9-35
-	android:icon
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:8:9-43
-	android:theme
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:12:9-40
-activity#com.example.johnb.nfcseniorproject.Login
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:13:9-22:20
-	android:label
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:15:13-45
-	android:theme
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:16:13-56
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:5:5-64
 	android:name
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:14:13-34
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:17:13-21:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:18:17-69
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:5:22-62
+uses-permission#android.permission.NFC
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:6:5-61
 	android:name
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:18:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:20:17-77
-	android:name
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:20:27-74
-activity#com.example.johnb.nfcseniorproject.Home
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:23:9-26:59
-	android:label
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:25:13-57
-	android:theme
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:26:13-56
-	android:name
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:24:13-33
-activity#com.example.johnb.nfcseniorproject.RegisterUser
-ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:27:9-59
-	android:name
-		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:27:19-47
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:6:22-59
 uses-sdk
-INJECTED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:7:5-43
 MERGED from [com.android.support:design:25.3.1] C:\Users\Johnb\.android\build-cache\d1db577a2e40ce3cd62de21fe10b0d58535e02ba\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Johnb\.android\build-cache\7a4b9809a15823ce490357cdab73bad3f3fdf9b0\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] C:\Users\Johnb\.android\build-cache\a5e3c5cfddb4bde7a8a88116f6dabd4b7bf5e3f8\output\AndroidManifest.xml:20:5-44
@@ -84,6 +35,8 @@ MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Johnb\.android\bu
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Johnb\.android\build-cache\7e2f835e40564e87f7e0209ee04141d3305081af\output\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Johnb\.android\build-cache\f0cfe7d54c34bb0e52e4140f979f7db851fdf727\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Johnb\.android\build-cache\b1fd2f1798199bb1066f0eb63a48a0b20a9168e2\output\AndroidManifest.xml:5:5-7:41
+MERGED from [me.dm7.barcodescanner:zxing:1.9] C:\Users\Johnb\.android\build-cache\835f96c7bb6b20bb53798ed9298e713ae0aab9a5\output\AndroidManifest.xml:7:5-9:41
+MERGED from [me.dm7.barcodescanner:core:1.9] C:\Users\Johnb\.android\build-cache\1c3df82d41403227e387a2d0f2f6fe7c015cdb4b\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Johnb\.android\build-cache\ced76eeb57d618a180bd499ca1411da00e24913a\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:library:1.3.1] C:\Users\Johnb\.android\build-cache\538152610ba0c837b5f9a53273b925b8d9275002\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Johnb\.android\build-cache\8a3758158a4f83e5aadb9a8ca772d54e4181dd49\output\AndroidManifest.xml:21:5-23:54
@@ -98,8 +51,112 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Johnb\.android\
 		INJECTED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:7:15-41
 		INJECTED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml
+uses-feature#android.hardware.nfc
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:8:5-81
+	android:required
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:8:55-78
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:8:19-54
+application
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:9:5-67:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\Johnb\.android\build-cache\d1db577a2e40ce3cd62de21fe10b0d58535e02ba\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\Johnb\.android\build-cache\a5e3c5cfddb4bde7a8a88116f6dabd4b7bf5e3f8\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\Johnb\.android\build-cache\a5072e121e29e8b18cb4d306f5ad155eaccedcc8\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Johnb\.android\build-cache\cb92ba07c7c5bcdd9acf5b72ca11130f331b7f26\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Johnb\.android\build-cache\7e2f835e40564e87f7e0209ee04141d3305081af\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\Johnb\.android\build-cache\f0cfe7d54c34bb0e52e4140f979f7db851fdf727\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Johnb\.android\build-cache\b1fd2f1798199bb1066f0eb63a48a0b20a9168e2\output\AndroidManifest.xml:9:5-20
+MERGED from [me.dm7.barcodescanner:zxing:1.9] C:\Users\Johnb\.android\build-cache\835f96c7bb6b20bb53798ed9298e713ae0aab9a5\output\AndroidManifest.xml:11:5-20
+MERGED from [me.dm7.barcodescanner:core:1.9] C:\Users\Johnb\.android\build-cache\1c3df82d41403227e387a2d0f2f6fe7c015cdb4b\output\AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\Johnb\.android\build-cache\8a3758158a4f83e5aadb9a8ca772d54e4181dd49\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\Johnb\.android\build-cache\df858ddcde1bf991bf34ea7604c5754ffec618fe\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\Johnb\.android\build-cache\8cd14325f6ce4959f3f8c5f63d4b7571c722a91d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Johnb\.android\build-cache\0b48a7ab6de7a579851a2b18ff8ad0c6b93f874a\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\Johnb\.android\build-cache\1c88562258243f796faa402f032141247a8ebb4f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Johnb\.android\build-cache\5322326502b530e40f7d7613af95007143cffb68\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:12:9-41
+	android:supportsRtl
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:14:9-35
+	android:roundIcon
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:13:9-54
+	android:allowBackup
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:10:9-35
+	android:icon
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:11:9-43
+	android:theme
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:15:9-40
+activity#com.example.johnb.nfcseniorproject.Login
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:16:9-25:20
+	android:label
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:18:13-45
+	android:theme
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:19:13-56
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:17:13-34
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:23:27-74
+activity#com.example.johnb.nfcseniorproject.Home
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:26:9-31:20
+	android:label
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:28:13-57
+	android:theme
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:27:13-33
+activity#com.example.johnb.nfcseniorproject.RegisterUser
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:32:9-59
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:32:19-47
+activity#com.example.johnb.nfcseniorproject.AreaCheck
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:33:9-47:20
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:33:19-44
+intent-filter#android.intent.category.DEFAULT+android.nfc.action.NDEF_DISCOVERED
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:34:13-38:29
+action#android.nfc.action.NDEF_DISCOVERED
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:35:25-74
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:36:27-73
+data
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:37:17-54
+	android:mimeType
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:37:23-52
+intent-filter#android.nfc.action.TECH_DISCOVERED
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:40:13-42:29
+action#android.nfc.action.TECH_DISCOVERED
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:41:25-74
+meta-data#android.nfc.action.TECH_DISCOVERED
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:44:13-46:59
+	android:resource
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:46:17-56
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:45:17-66
+activity#com.example.johnb.nfcseniorproject.AdminPage
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:48:9-49:20
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:48:19-44
+activity#com.example.johnb.nfcseniorproject.WriteTag
+ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:51:9-65:20
+	android:name
+		ADDED from C:\Users\Johnb\AndroidStudioProjects\NFCSeniorProject\app\src\main\AndroidManifest.xml:51:19-43
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\Johnb\.android\build-cache\d1db577a2e40ce3cd62de21fe10b0d58535e02ba\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\Johnb\.android\build-cache\7a4b9809a15823ce490357cdab73bad3f3fdf9b0\output\AndroidManifest.xml:22:5-24:34

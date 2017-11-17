@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/saveTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="Save"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/tagText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_below="@+id/tagToggle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp" />
+
+    <ToggleButton
+        android:id="@+id/tagToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toggleButton"
+        android:textOff="item"
+        android:textOn="area"
+        android:layout_below="@+id/saveTag"
+        android:layout_alignLeft="@+id/saveTag"
+        android:layout_alignStart="@+id/saveTag"
+        android:layout_marginTop="18dp" />
+
+    <Spinner
+        android:id="@+id/areaSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tagToggle"
+        android:layout_alignLeft="@+id/tagText"
+        android:layout_alignStart="@+id/tagText"
+        android:layout_alignRight="@+id/tagText"
+        android:layout_alignEnd="@+id/tagText" />
+
+
+
+</RelativeLayout>
