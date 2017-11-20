@@ -6,7 +6,7 @@
         android:id="@+id/areaName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Area Name"
+        android:text="No Area Scanned"
         android:gravity="center"
         android:padding="15dp"
         android:textSize="30sp"
@@ -31,12 +31,4 @@
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/scanForItem"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Scan item"
-        android:layout_below="@+id/scrollView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
 </RelativeLayout>

@@ -6,12 +6,9 @@
         android:id="@+id/writeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+        android:layout_marginTop="87dp"
+        android:text="Write Tag"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="132dp"
-        android:layout_marginRight="132dp"
-        android:layout_marginTop="91dp"
-        android:text="Write Tag" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

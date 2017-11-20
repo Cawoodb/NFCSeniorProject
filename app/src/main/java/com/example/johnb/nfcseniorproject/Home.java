@@ -32,7 +32,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
 public class Home extends AppCompatActivity {
-    private AreaCheck.NFCManager nfcMger;
+    private static NFCManager nfcMger;
     IntentFilter[] intentFiltersArray;
     PendingIntent nfcPendingIntent;
     BarcodeScanner barcode = new BarcodeScanner();
@@ -45,23 +45,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        nfcMger = new NFCManager(this);
         int userId = GlobalInformation.getInstance().userId;
+        Intent nfcIntent = new Intent(this, getClass());
+        nfcIntent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        nfcPendingIntent = PendingIntent.getActivity(this, 0, nfcIntent, 0);
 
-        Button areaCheckButton = (Button) findViewById(R.id.scanForArea);
-        areaCheckButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                try {
-                    OnScanForArea(v);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                } catch (TimeoutException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
 
         Button Manage = (Button) findViewById(R.id.Manage);
         Manage.setOnClickListener(new View.OnClickListener() {
@@ -92,10 +81,11 @@ public class Home extends AppCompatActivity {
                 for (int i = 0; i < rawMessages.length; i++) {
                     messages[i] = (NdefMessage) rawMessages[i];
                     try {
-                        String areaName = new String(messages[i].getRecords()[0].getPayload());
+                    String areaName = new String(messages[i].getRecords()[0].getPayload()).substring(3);
                         BackroundWorker backroundWorker = new BackroundWorker(this);
                         backroundWorker.execute("getAreaId",areaName );
                         backroundWorker.get(5000, TimeUnit.MILLISECONDS);
+                        GlobalInformation test = GlobalInformation.getInstance();
                         GlobalInformation.getInstance().areaId = Integer.parseInt(GlobalInformation.getInstance().queryResult);
                         Intent areaIntent = new Intent(getApplicationContext() ,AreaCheck.class);
                         startActivity(areaIntent);

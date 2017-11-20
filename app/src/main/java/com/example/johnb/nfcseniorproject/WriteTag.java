@@ -96,8 +96,10 @@ public class WriteTag extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     toggleText = tagToggle.getTextOn().toString();
+                    dropdown.setVisibility(View.INVISIBLE);
                 } else {
                     toggleText = tagToggle.getTextOff().toString();
+                    dropdown.setVisibility(View.VISIBLE);
                 }
             }
         });

@@ -202,6 +202,7 @@ public class BackroundWorker extends AsyncTask<String, Void, Void> {
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
 
                 String post_data = URLEncoder.encode("area_name","UTF-8") + "=" + URLEncoder.encode(area_name,"UTF-8");
+
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();

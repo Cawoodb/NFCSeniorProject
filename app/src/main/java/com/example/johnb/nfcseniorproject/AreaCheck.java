@@ -49,12 +49,13 @@ public class AreaCheck extends AppCompatActivity{
     String areaName, itemStart;
     ArrayList<safetyItem> areaItems;
     TextView areaNameView;
-    private NFCManager nfcMger;
+    private static NFCManager nfcMger;
     IntentFilter[] intentFiltersArray;
     PendingIntent nfcPendingIntent;
     BarcodeScanner barcode = new BarcodeScanner();
     Integer idCount = 0;
     public static final String MIME_TEXT_PLAIN = "text/plain";
+    public String itemNames[];
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -110,23 +111,6 @@ public class AreaCheck extends AppCompatActivity{
             e.printStackTrace();
         }
 
-        Button scanButton = (Button) findViewById(R.id.scanForItem);
-        scanButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Context context = AreaCheck.this;
-                try {
-                    OnScanItem(v, context);
-                    String scanResult = barcode.scanResult;
-                    String sv = null;
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                } catch (TimeoutException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
     }
 
     public static void OnScanItem(View view, Context context)throws InterruptedException, ExecutionException, TimeoutException{
@@ -166,7 +150,7 @@ public class AreaCheck extends AppCompatActivity{
             backroundWorker.execute(type, itemStart);
             backroundWorker.get(1000, TimeUnit.MILLISECONDS);
             result = GlobalInformation.getInstance().queryResult;
-            String itemNames[] = result.split(",");
+            itemNames = result.split(",");
             for(int i = 0; i < itemNames.length; i++){
                 if(!itemNames[i].equals("")) {
                     safetyItem tempItem = new safetyItem(i, itemNames[i]);
@@ -174,22 +158,27 @@ public class AreaCheck extends AppCompatActivity{
                 }
             }
         }
+
+        for(int i = idCount; i < 24; i++) {
+            try {
+                if (!("".equals(itemNames[i]) || itemNames[i] == null)) {
+                    String test = itemNames[i];
+                    idCount++;
+                } else {
+                    break;
+                }
+            } catch (ArrayIndexOutOfBoundsException e) {
+                break;
+            }
+            if (idCount == 24) {
+                idCount = 0;
+            }
+        }
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         GlobalInformation globalInfo = GlobalInformation.getInstance();
-        for(int i = idCount; i < 24; i++){
-            if(!("".equals(globalInfo.itemIds[i]) || globalInfo.itemIds[i] == null)){
-                String test = globalInfo.itemIds[i];
-                idCount++;
-            }else{
-                break;
-            }
-        }
-        if(idCount == 24){
-            idCount = 0;
-        }
 
         super.onNewIntent(intent);
         if (intent != null && NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction())) {
@@ -197,40 +186,31 @@ public class AreaCheck extends AppCompatActivity{
                     intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
             if (rawMessages != null) {
                 NdefMessage[] messages = new NdefMessage[rawMessages.length];
+                String itemName = "neverequalthis";
                 for (int i = 0; i < rawMessages.length; i++) {
                     messages[i] = (NdefMessage) rawMessages[i];
-                    globalInfo.itemIds[idCount] = new String(messages[i].getRecords()[0].getPayload());
+                    itemName = new String(messages[i].getRecords()[0].getPayload()).substring(3);
                 }
-                // Process the messages array.
+                for (int i = 0; i < idCount ; i++){
+                    if(itemName.equals(itemNames[i])){
+                        itemLayout.removeViewAt(i);
+                        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                        layoutParams.setMargins(15,15,15,15);
+                        TextView tempItemText = new TextView(this);
+                        tempItemText.setHeight(55);
+                        tempItemText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+                        tempItemText.setTextColor(Color.parseColor("#3ad114"));
+                        tempItemText.setLayoutParams(layoutParams);
+                        tempItemText.setText(areaItems.get(i).name);
+                        tempItemText.setId(areaItems.get(i).id);
+                        tempItemText.setGravity(1);
+                        itemLayout.addView(tempItemText,i);
+                    }
+                }
             }
         }
     }
 
-    public class NFCManager {
-        private Activity activity;
-        private NfcAdapter nfcAdpt;
-
-        public NFCManager(Activity activity) {
-            this.activity = activity;
-        }
-
-        public void verifyNFC(){
-
-            nfcAdpt = NfcAdapter.getDefaultAdapter(activity);
-
-            if (nfcAdpt == null) {
-                Toast.makeText(this.activity, "This device doesn't support NFC.", Toast.LENGTH_LONG).show();
-                finish();
-                return;
-            }
-            if (!nfcAdpt.isEnabled()) {
-                Toast.makeText(this.activity, "NFC is disabled.", Toast.LENGTH_LONG).show();
-                finish();
-                return;
-            }
-
-        }
-    }
 
     @Override
     protected void onResume() {
